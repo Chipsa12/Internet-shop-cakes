@@ -3,6 +3,7 @@
 @section('title', 'Регистрация')
 
 @section('content')
+    <div class="card-header" >Регистрация</div>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
