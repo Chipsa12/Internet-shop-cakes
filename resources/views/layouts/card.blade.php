@@ -1,6 +1,6 @@
 <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-        <img src="https://big-cake-house.ru/assets/cache/products/410/tortik-s-yagodnyim-dekorom_0x1080_9f9.jpg" alt="Cake">
+        <img src="{{ Storage::url($product->image) }}" alt="Cake">
         <div class="caption">
             <h3>{{ $product->name }}</h3>
             <p>{{ $product->price }} руб.</p>
