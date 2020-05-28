@@ -1,0 +1,102 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ProductsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('products')->insert([
+            [   'name' => 'Торт "Именинник"',
+                'code' => 'cake_birthday',
+                'description' => 'Описание торта "Именинник"',
+                'price' => '1900',
+                'category_id' => 1,
+                'image' => 'products/cake_birthday.jpg',
+            ],
+            [   'name' => 'Торт "Женское счастье"',
+                'code' => 'cake_woman_happiness',
+                'description' => 'Описание торта "Женское счастье"',
+                'price' => '2100',
+                'category_id' => 1,
+                'image' => 'products/cake_woman_happiness.jpg',
+            ],
+            [   'name' => 'Торт "Мужское наслаждение"',
+                'code' => 'cake_male_pleasure',
+                'description' => 'Описание  торта "Мужское наслаждение"',
+                'price' => '2000',
+                'category_id' => 1,
+                'image' => 'products/cake_male_pleasure.jpg',
+            ],
+            [   'name' => 'Торт "Любовный вальс"',
+                'code' => 'cake_love_waltz',
+                'description' => 'Описание торта "Любовный вальс"',
+                'price' => '2300',
+                'category_id' => 1,
+                'image' => 'products/cake_love_waltz.jpg',
+            ],
+            [   'name' => 'Торт "Сказочный"',
+                'code' => 'cake_fabulous',
+                'description' => 'Описание торта "Сказочный"',
+                'price' => '2100',
+                'category_id' => 2,
+                'image' => 'products/cake_fabulous.jpg',
+            ],
+            [   'name' => 'Торт "Единорог"',
+                'code' => 'cake_unicorn',
+                'description' => 'Описание торта "Единорог"',
+                'price' => '2500',
+                'category_id' => 2,
+                'image' => 'products/cake_unicorn.jpg',
+            ],
+            [   'name' => 'Торт "Принцесса"',
+                'code' => 'cake_princess',
+                'description' => 'Описание торта "Принцесса"',
+                'price' => '2600',
+                'category_id' => 2,
+                'image' => 'products/cake_princess.jpg',
+            ],
+            [   'name' => 'Торт "Маленький принц"',
+                'code' => 'cake_little_prince',
+                'description' => 'Описание торта "Маленький принц"',
+                'price' => '2800',
+                'category_id' => 2,
+                'image' => 'products/cake_little_prince.jpg',
+            ],
+            [   'name' => 'Торт "Счастье начальника"',
+                'code' => 'cake_happiness_boss',
+                'description' => 'Описание торта "Счастье начальника"',
+                'price' => '3500',
+                'category_id' => 3,
+                'image' => 'products/cake_happiness_boss.jpg',
+            ],
+            [   'name' => 'Торт "Компания"',
+                'code' => 'cake_company',
+                'description' => 'Описание торта "Компания"',
+                'price' => '4000',
+                'category_id' => 3,
+                'image' => 'products/cake_company.jpg',
+            ],
+            [   'name' => 'Торт "Большой коллектив"',
+                'code' => 'cake_large_team',
+                'description' => 'Описание торта "Большой коллектив"',
+                'price' => '5000',
+                'category_id' => 3,
+                'image' => 'products/cake_large_team.jpg',
+            ],
+            [   'name' => 'Торт "Новая Компания"',
+                'code' => 'cake_new_team',
+                'description' => 'Описание торта "Новая Компания"',
+                'price' => '4800',
+                'category_id' => 3,
+                'image' => 'products/cake_new_team.jpg',
+            ]
+        ]);
+    }
+}
