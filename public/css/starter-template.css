@@ -1,9 +1,9 @@
 body {
-    padding-top: 70px;
+    padding-top: 40px;
 }
 
 .starter-template {
-    padding: 40px 15px;
+    padding: 20px 15px;
     text-align: center;
 }
 
@@ -42,3 +42,6 @@ span.badge.badge-danger {
     background-color: #ffc107;
 }
 
+div.filters {
+    padding-bottom: 5px;
+}
