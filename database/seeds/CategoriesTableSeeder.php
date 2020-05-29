@@ -22,7 +22,7 @@ class CategoriesTableSeeder extends Seeder
             [   'name' => 'Детские торты',
                 'code' => 'children_cakes',
                 'description' => 'Описание детских тортиков.',
-                'image' => 'categories/children_cakes.png',
+                'image' => 'categories/children_cakes.jpg',
             ],
             [   'name' => 'Корпоративные торты',
                 'code' => 'corporate_cakes',

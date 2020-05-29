@@ -18,7 +18,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::get();
+        $products = Product::paginate(10);
         return view('auth.products.index', compact('products'));
     }
 
@@ -87,6 +87,11 @@ class ProductController extends Controller
         if ($request->has('image')) {
             Storage::delete($product->image);
             $params['image'] = $request->file('image')->store('products');
+        }
+        foreach (['new', 'hit', 'recommend'] as $fieldName) {
+            if (!isset($params[$fieldName])) {
+                $params[$fieldName] = 0;
+            }
         }
         $product->update($params);
         return redirect()->route('products.index');
