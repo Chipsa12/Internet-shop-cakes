@@ -27,8 +27,8 @@
                                 <input type="text" name="phone" id="phone" value="" class="form-control">
                             </div>
                         </div>
-                    </div>
-                    <br>
+                        <br>
+                        <br>
                         <div class="form-group">
                             <label for="name" class="control-label col-lg-offset-3 col-lg-2">Email: </label>
                             <div class="col-lg-4">
@@ -36,7 +36,6 @@
                             </div>
                         </div>
                     </div>
-                    <br>
                     <br>
                     @csrf
                     <input type="submit" class="btn btn-success" value="Подтвердить заказ">

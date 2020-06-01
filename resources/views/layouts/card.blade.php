@@ -6,7 +6,7 @@
             @endif
 
             @if($product->isRecommend())
-                <span class="badge badge-warning">Рекомендуем</span>
+                <span class="badge badge-secondary">Рекомендуем</span>
             @endif
 
             @if($product->isHit())

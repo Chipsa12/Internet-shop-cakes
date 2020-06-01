@@ -42,6 +42,11 @@ span.badge.badge-danger {
     background-color: #ffc107;
 }
 
+span.badge.badge-secondary {
+    color: #fff;
+    background-color: yellowgreen;
+}
+
 div.filters {
     padding-bottom: 5px;
 }
