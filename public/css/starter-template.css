@@ -38,8 +38,8 @@ span.badge.badge-warning {
 }
 
 span.badge.badge-danger {
-    color: #212529;
-    background-color: #ffc107;
+    color: #fff;
+    background-color: #ed1c24;
 }
 
 span.badge.badge-secondary {

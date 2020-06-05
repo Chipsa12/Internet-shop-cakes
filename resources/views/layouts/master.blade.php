@@ -24,7 +24,9 @@
                 <li @routeactive('categor*')><a href="{{ route('categories') }}">Категории</a>
                 </li>
                 <li @routeactive('basket*')><a href="{{ route('basket') }}">В корзину</a></li>
+                @admin
                 <li><a href="{{ route('reset') }}">Сбросить проект в начальное состояние</a></li>
+                @endadmin
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
